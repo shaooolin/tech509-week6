@@ -2,25 +2,58 @@
 
 ## Create a new Git Repo
 
+```
+git init
+```
+## Check status of your repo
+```
+git status
+```
+## To add files to git
+```
+git <filename1> <filename2>
+```
+## To commit a file
+```
+git commit -m'<Message>'
+```
+## Check git remote
+```
+git remote show origin
+```
+## Check branch
+```
+git branch
+```
+## Check git history
+```
+git log
+```
+## Push local branch to remote
+```
+git push <remote name><branch name>
 
+git push origin main/master
+```
+## Fist time Upload
+```
 git init
 
-## Check status of your repo
-git status
+git remote add origin <repository-url>
 
-## To add files to git
-git+ filename1 filename2
+git add .
 
-## To commit a file
-git commit -m'Message'
+git commit -m "First time upload"
 
-## Check git remote
-git remote show origin
+git push -u origin main/master
+```
+## Update Coding
+```
+git pull origin main/master
 
-## git log / git branch
-check branch
+git add .
 
-## push local branch to remote
- git push <remote name><branch name>
+git commit -m "Update commit"
 
-'git push origin main' 
+git push origin main/master
+```
